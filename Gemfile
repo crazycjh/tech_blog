@@ -42,3 +42,4 @@ gem "kramdown-parser-gfm"
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.8.0", :platforms => [:jruby]
 gem 'github-pages'
+gem "jekyll-agency"

@@ -4,6 +4,7 @@ title:  "JS中的Async/Sync"
 date:   2023-01-01 08:53:18 +0800
 categories: javascript
 ---
+
 ## 同步與非同步？
 #### 什麼是同步
 一般來說JS都是以 `同步synchronous` 的方式執行程式碼，以圖中左邊來說，由上而下的時間軸順序執行程式碼，每次只做一件事，
@@ -14,5 +15,6 @@ categories: javascript
 - 舉例：JS中有個function `setTimeout()` 是可以在這裡面寫一個callback function，在設定的倒數時間到之後執行它，那如果現在他是以同步的方式執行，這樣程式碼會卡在那邊等到時間到才能往下繼續執行，那如果是非同步，程式碼會繼續往下執行之外同時在背景還會繼續倒數直到時間到執行設定好的callback function。
 
 ![async](https://www.freecodecamp.org/news/content/images/2021/09/freeCodeCamp-Cover-2.png)
+
 
 

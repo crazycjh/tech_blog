@@ -17,6 +17,7 @@ title: 技術筆記、生活足跡
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
   把生活中學習到瑣碎的小事記下來，讓想法更加完整。
+  
   將學習筆記做得更完整，學習思路才能更順暢
 baseurl: "/tech_blog" # the subpath of your site, e.g. /blog
 url: "http://crazycjh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
