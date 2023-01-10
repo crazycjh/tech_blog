@@ -21,9 +21,8 @@ var myCodeMirror = CodeMirror(document.body, {
   value: "function myScript(){return 100;}\n",
   mode:  "javascript"
 });
-
 ```
-CodeMirror第一個參數，是要把editor掛的地方，在範例中市選擇對body做掛載，而我是選擇用另一個方法，在html建立一個textarea，把editor建立在在這上面。
+CodeMirror第一個參數，是要把editor掛的地方，在範例是選擇對body做掛載，而我是選擇用另一個方法，在html建立一個textarea，把editor建立在這上面。
 
 [參考](https://codemirror.net/5/doc/manual.html#fromTextArea)
 ```
@@ -48,7 +47,7 @@ var myCodeMirror = CodeMirror.fromTextArea(myTextArea);
 `myCodeMirror.setValue('字串')`
 
 #### instance/ doc
-在文件中config或是api中會看到cm(應該就是codemirror這個instance)與doc，我的理解是instance是指整個編輯器，而doc是指編輯器中這個文字document，所以以文件中寫的`doc.getValue()` ，照理說如果要這樣寫，`myCodeMirror.doc.getValue()`(實測也是沒問題的)。
+在文件中config或是api中會看到cm(應該就是codemirror這個instance)與doc，我的理解是instance是指整個編輯器，而doc是指編輯器中這個文字document，所以以文件中寫的`doc.getValue()` ，照理說要這樣寫，`myCodeMirror.doc.getValue()`(實測也是沒問題的)。
 
 不過在文件中有提到 *Methods prefixed with doc. can, unless otherwise specified, be called both on CodeMirror (editor) instances and CodeMirror.Doc instances. Methods prefixed with cm. are only available on CodeMirror instances.*
 所以可以直接以 `CodeMirror instance 取代 CodeMirror.Doc instance，不過兩者都可以使用` 
