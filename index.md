@@ -4,5 +4,3 @@
 
 layout: home
 ---
-指令: 
-jekyll server
