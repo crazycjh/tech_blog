@@ -20,7 +20,7 @@ console.log(destination.name);  //結果: Rendy
 console.log(source.name);       //結果: Rendy
 ```
 
-這時候會發現，變更 `destination` 同時也變更 `source` 裡面的值。
+會發現，變更 `destination` 同時也變更 `source` 裡面的值。
 這就要提到 call by value 以及 call by refence
 
 ### call by value / call by object
@@ -43,7 +43,7 @@ console.log(x); //結果:1
 所以這樣就可以很明確的瞭解為什麼改變object的值的時候，`source` `destination` 裡面的值會被同步更動，因為兩者都是指到同一個記憶體位置。
 
 #### 要怎麼做才能不更動 source 的值
-這樣就要提到 淺拷貝跟深拷貝
+不更動的方式有兩種： *淺拷貝跟深拷貝*
 
 #### 淺拷貝
 字面意思就是比較淺，
@@ -67,7 +67,7 @@ console.log(destination.detail.age,source.detail.age) //結果: 100 100
 在這裡會發現修改 `name` 時資料互不影響，但在修改detail.age時又互相影響了，這是因為使用的是淺拷貝，這個copy只有單純複製第一層的資料，第二層以下的都還是以call by referenc，所以當你修改detail.age時兩邊同時都會被修改。
  
 #### 以深拷貝來解決淺拷貝的問題
-使用 JSON.parse(JSON.stringify())，用這個方法就可以把淺拷貝碰到裡面有多層的問題。
+使用 JSON.parse(JSON.stringify())，用這個方法就可以把淺拷貝碰到裡面有多層的問題解決。
 ```
 const destination = JSON.parse(JSON.stringify(source));
 
