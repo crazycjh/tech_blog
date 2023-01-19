@@ -14,7 +14,7 @@ setup(){
 
 }
 ```
-### 傳到<style>
+### 傳到 `<style>`
 
 ```
 <div class="md-size"></div> //在這裏class不需要v-bind
